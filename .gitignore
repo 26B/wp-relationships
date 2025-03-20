@@ -1,0 +1,9 @@
+node_modules
+vendor
+.DS_Store
+.php-pre-commit
+
+.wp-env.override*.json
+languages/*.po
+languages/*.mo
+debug.log

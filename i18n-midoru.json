@@ -1,0 +1,34 @@
+{
+	"backend": {
+		"export": {
+			"client": "localise",
+			"locale": [ "en", "pt_PT" ],
+			"type"  : "plugin",
+			"domain": "wp-relationships",
+			"path"  : "./languages/",
+			"ext"   : "po",
+			"format": "gettext"
+		},
+		"import": {
+			"client"       : "localise",
+			"locale"       : "",
+			"type"         : "plugin",
+			"domain"       : "wp-relationships",
+			"path"         : "./languages/",
+			"filename"     : "/backend.pot",
+			"ext"          : "pot",
+			"format"       : "gettext",
+			"tag-new"      : "TranslationHelper",
+			"tag-updated"  : "TranslationHelper",
+			"delete-absent": true
+		},
+		"make_pots": {
+			"client"     : "WP_I18n",
+			"domain"     : "wp-relationships",
+			"destination": "./languages/",
+			"source"     : "./includes/",
+			"skip-js"    : true,
+			"filename"   : "backend.pot"
+		}
+	}
+}
